@@ -1,3 +1,16 @@
 body {
     font-family: 'Baumans', cursive;
+    background-color: purple;
+    background-image: url("../images/background.jpg");
+    background-size:100%;
+}
+
+img{
+    width: 100px;
+    height:100px;
+}
+
+.jumbotron, .text, .game{
+    background-color: lavender;
+    
 }

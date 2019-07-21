@@ -4,7 +4,9 @@ var losses = 0
 
 function gameStart(){
     crystalTotal = 0
+    $("#Core").text(crystalTotal)
     coreValue = Math.floor(Math.random() * (120 - 19)) + 19
+    $("#powerNeeded").text(coreValue)
     console.log("Core " + coreValue)
     crystalOneValue = Math.floor(Math.random() * (12 - 1)) + 1
     console.log("One " + crystalOneValue)
@@ -14,9 +16,12 @@ function gameStart(){
     console.log("Three " + crystalThreeValue)
     crystalFourValue = Math.floor(Math.random() * (12 - 1)) + 1 
     console.log("Four " + crystalFourValue) 
+    $("#wins").text(wins)
+    $("#losses").text(losses)
 }
 
 function winCondition(){
+    $("#Core").text(crystalTotal)
     if (crystalTotal === coreValue){
         wins ++
         console.log("wins " + wins)

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Crystals</title>
-
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,19 +21,23 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-5 text">
                 <p>Use the four crystals to power up arcane cores. Each core has a set amount of power it can handle and you must be careful not to overpower it.</p>
                 <p>Each of the crystals has a set amount of power it can distribute. Clicking on the crystal charges the core by that amount each time. </p>
                 <p>To win the game, charge the core up to the exact number, over-charging the core means you lose. Either way, the game resets and the values of the core and crystals change and you can try again.</p>
             </div>
-            <div class="col-lg-6">
-                <div id="Core"> Core:</div>
-                <button id="crystalOne">Crystal</button>
-                <button id="crystalTwo">Crystal</button>
-                <button id="crystalThree">Crystal</button>
-                <button id="crystalFour">Crystal</button>
-                <div id="wins">Wins:</div>
-                <div id="losses">Losses:</div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 game p-5 text-center">
+                <div>Power Needed:  <span id="powerNeeded"></span></div>
+                <div> Core:   <span id="Core"></span></div>
+                <div class="row">
+                    <button class = "btn btn-light" id="crystalOne"><img src="assets/images/crystal_1.jpg"></button>
+                    <button class = "btn btn-light" id="crystalTwo"><img src="assets/images/crystal_2.jpg"></button>
+                    <button class = "btn btn-light" id="crystalThree"><img src="assets/images/crystal_3.jpg"></button>
+                    <button class = "btn btn-light" id="crystalFour"><img src="assets/images/crystal_4.jpg"></button>
+                </div>
+                <div>Wins:   <span id="wins"></span></div>
+                <div>Losses:   <span id="losses"></span></div>
             </div>
         </div>
     </div>
