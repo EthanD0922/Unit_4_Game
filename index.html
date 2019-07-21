@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Crystals</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid" id="jumbo"> 
+            <div class="container text-center">
+                <h1 class="display-4">Magic Crystals</h1>
+                <p class="lead">Use the crystals to power up the arcane core. Be careful though, overpowering it could be dangerous! </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Use the four crystals to power up arcane cores. Each core has a set amount of power it can handle and you must be careful not to overpower it.</p>
+                <p>Each of the crystals has a set amount of power it can distribute. Clicking on the crystal charges the core by that amount each time. </p>
+                <p>To win the game, charge the core up to the exact number, over-charging the core means you lose. Either way, the game resets and the values of the core and crystals change and you can try again.</p>
+            </div>
+            <div class="col-lg-6">
+                <div id="Core"> Core:</div>
+                <button id="crystalOne">Crystal</button>
+                <button id="crystalTwo">Crystal</button>
+                <button id="crystalThree">Crystal</button>
+                <button id="crystalFour">Crystal</button>
+                <div id="wins">Wins:</div>
+                <div id="losses">Losses:</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script rel="text/javascript" src="assets/javascript/game.js"></script>
+</body>
